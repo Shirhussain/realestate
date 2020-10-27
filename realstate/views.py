@@ -12,3 +12,6 @@ def about(request):
 def homeList(request):
     return render(request, "realstate/listings.html")
     
+
+def homeDetail(request):
+    return render(request, "realstate/listing.html", {})
