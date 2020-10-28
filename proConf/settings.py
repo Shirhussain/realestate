@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #for making humanize and saprated by comma for price i have to do the following code 
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
