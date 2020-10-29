@@ -21,12 +21,12 @@
         </ul>
 
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item mr-3">
-            <a class="nav-link" href="register.html">
+          <li class="nav-item {% if request.resolver_match.url_name == 'register' %}active{% endif %} mr-3">
+            <a class="nav-link" href="{% url 'account:register' %}">
               <i class="fas fa-user-plus"></i> Register</a>
           </li>
-          <li class="nav-item mr-3">
-            <a class="nav-link" href="login.html">
+          <li class="nav-item {% if request.resolver_match.url_name == 'login' %}active{% endif %} mr-3">
+            <a class="nav-link" href="{% url 'account:login' %}">
               <i class="fas fa-sign-in-alt"></i>
 
               Login</a>

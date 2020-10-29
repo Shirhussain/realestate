@@ -21,6 +21,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     #myapp
     'realstate.apps.RealstateConfig',
+    'account.apps.AccountConfig',
 
     #django app
     'django.contrib.admin',

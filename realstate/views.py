@@ -92,6 +92,10 @@ def search(request):
         'state_choices': state_choices,
         'bedroom_choices': bedroom_choices,
         'price_choices': price_choices,
-        'listings': query_list
+        'listings': query_list,
+        #when we search something 'price, keywords' whatever
+        #it should stays on the form once it shows on the result. to do that also need to edits our template, so here we go 
+        #just i wanna apply on search.html and add a value attribute for option i will do an if statement 
+        'values': request.GET
     }
     return render(request, "realstate/search.html", context)
