@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     #myapp
     'realstate.apps.RealstateConfig',
     'account.apps.AccountConfig',
+    'contact.apps.ContactConfig',
 
     #django app
     'django.contrib.admin',

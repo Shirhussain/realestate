@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('realstate.urls', namespace="realstate")),
     path('account/', include('account.urls', namespace="account")),
+    path('contact/', include('contact.urls', namespace="contact")),
 ]
 
 

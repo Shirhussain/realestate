@@ -8,7 +8,10 @@
 
 
 {% block content %}
-  <br>
+  
+  {% if messages %}
+    <br>
+  {% endif %}
   <!-- alerts -->
   {% include 'partials/_alerts.html' %}
   <!-- Showcase -->
