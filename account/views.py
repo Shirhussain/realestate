@@ -66,6 +66,9 @@ def dashboard(request):
     
 
 def logout(request):
-    return redirect(reverse('realstate:home'))
+    if request.method == "POST":
+        auth.logout(request)
+        messages.success(request, "you are successfully logged out ")
+        return redirect(reverse('account:login'))
     
     
