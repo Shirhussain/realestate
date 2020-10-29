@@ -142,6 +142,14 @@ MESSAGE_TAGS = {
 }
 
 
+#django email config
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'yourReal@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourPasswordOfGamil'
+EMAIL_USE_TLS = True
+
+
 
 
 
